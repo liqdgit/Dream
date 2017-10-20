@@ -25,11 +25,8 @@ public class ObjectSerializeUtil {
 		if(value == null)
 			throw new NullPointerException("Can't serialize null"); 
 		byte[] result;
-		ByteArrayOutputStream byteOutPut;
-		ObjectOutputStream objOutPut;
-
-		byteOutPut = new ByteArrayOutputStream();
-		objOutPut = new ObjectOutputStream(byteOutPut);
+		ByteArrayOutputStream byteOutPut = new ByteArrayOutputStream();
+		ObjectOutputStream objOutPut = new ObjectOutputStream(byteOutPut);
 
 		objOutPut.writeObject(value);
 		byteOutPut.close();
@@ -52,11 +49,8 @@ public class ObjectSerializeUtil {
 		if(values == null)
 			throw new NullPointerException("Can't serialize null"); 
 		
-		ByteArrayInputStream byteInput;
-		ObjectInputStream objInput;
-
-		byteInput = new ByteArrayInputStream(values);
-		objInput = new ObjectInputStream(byteInput);
+		ByteArrayInputStream byteInput = new ByteArrayInputStream(values);
+		ObjectInputStream objInput = new ObjectInputStream(byteInput);
 
 		T t = (T)objInput.readObject();
 
