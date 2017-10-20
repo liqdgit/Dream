@@ -16,10 +16,11 @@ import java.util.Map;
  * <p>Title:      ListScreenAdapter. </p>
  * <p>Description List 筛选工具类 </p>
  *
+ *
  * @Author <a href="liqingdong"/>李清栋</a>
  * @CreateDate 2017/5/26 11:26
  */
-public class ListScreenAdapter<T> {
+public class ListScreenAdapter {
 
     /**
      * <p>Title:      List筛选（只支持String类型）. </p>
@@ -31,8 +32,9 @@ public class ListScreenAdapter<T> {
      * @return
      * @Author <a href="liqingdong"/>李清栋</a>
      * @CreateDate 2017/5/26 11:52
+     *
      */
-    public List<T> screen(List<T> objects, String propertyName, String value) {
+    public static <T> List<T> screen(List<T> objects, String propertyName, String value) {
         Map<String, String> param = Maps.newHashMap();
         param.put(propertyName, value);
         return screen(objects, param);
@@ -47,7 +49,7 @@ public class ListScreenAdapter<T> {
      * @Author <a href="liqingdong"/>李清栋</a>
      * @CreateDate 2017/5/27 11:24
      */
-    public List<T> screen(List<T> objects, Map<String, String> param) {
+    public static <T> List<T> screen(List<T> objects, Map<String, String> param) {
         if (!validate(objects, param)) {
             return getEmptyValues();
         }
@@ -106,7 +108,7 @@ public class ListScreenAdapter<T> {
 
     }
 
-    private boolean validate(List<T> objects, Map<String, String> param) {
+    private static <T> boolean validate(List<T> objects, Map<String, String> param) {
         if (objects == null) {
             return false;
         }
@@ -140,7 +142,7 @@ public class ListScreenAdapter<T> {
     }*/
 
 
-    private List<T> getEmptyValues() {
+    private static <T> List<T> getEmptyValues() {
         return new ArrayList<>(0);
     }
 
