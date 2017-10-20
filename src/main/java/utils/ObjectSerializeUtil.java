@@ -3,14 +3,14 @@ package utils;
 import java.io.*;
 
 /**
- * <p>Title:      ObjectsTranscoder. </p>
+ * <p>Title:      ObjectSerializeUtil. </p>
  * <p>Description 对象序列化 </p>
  * <p>Company:    李清栋 </p>
  *
  * @Author         <a href="liqingdong"/>李清栋</a>
  * @CreateDate     2017/9/29 10:56
  */
-public class ObjectsTranscoder {
+public class ObjectSerializeUtil {
 
 	/**
 	 * <p>Title:      对象序列化. </p>
