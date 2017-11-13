@@ -25,7 +25,6 @@ public class ObjectSerializeUtil {
 		if(value == null) {
 			throw new NullPointerException("Can't serialize null");
 		}
-		byte[] result;
 		ByteArrayOutputStream byteOutPut = new ByteArrayOutputStream();
 		ObjectOutputStream objOutPut = new ObjectOutputStream(byteOutPut);
 
@@ -33,9 +32,9 @@ public class ObjectSerializeUtil {
 		byteOutPut.close();
 		objOutPut.close();
 
-		result = byteOutPut.toByteArray();
-			return result;
-		}
+		byte[] result = byteOutPut.toByteArray();
+		return result;
+	}
 
 		/**
 		 * <p>Title:      反序列化. </p>
