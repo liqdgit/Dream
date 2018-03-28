@@ -3,14 +3,14 @@
 <head>
     <title>解析Excel</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <script src="/static/js-xlsx/xlsx.core.min.js"></script>
-    <script src="/static/jquery/jquery-1.8.3.js"></script>
+    <!--<script src="/static/js-xlsx/xlsx.core.min.js"></script>
+    <script src="/static/jquery/jquery-1.8.3.js"></script>-->
 </head>
 <body class="container">
 <input type="file" id="excel-file">
 </body>
 <script type="text/javascript">
-    $('#excel-file').change(function (e) {
+    /*$('#excel-file').change(function (e) {
         var files = e.target.files;
 
         var fileReader = new FileReader();
@@ -44,5 +44,17 @@
         // 以二进制方式打开文件
         fileReader.readAsBinaryString(files[0]);
     });
+
+
+
+    var timer = setTimeout(
+        function () {
+        console.log("1111111");
+        },
+        1000
+    );*/
+
+    var s = ['1', '2', '3'];
+    console.log(s.indexOf('2'));
 </script>
 </html>
