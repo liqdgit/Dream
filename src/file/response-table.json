@@ -1,0 +1,36 @@
+{
+  "data": {
+    "blockCode": "tiaoxian",
+    "pageCode": "ar",
+    "blockData": {
+      "headers": [
+        {
+          "property": "field_1",
+          "title": "排名",
+          "order": 1
+        },
+        {
+          "property": "field_2",
+          "title": "城市",
+          "order": 2
+        }
+      ],
+      "tableData":[
+        {
+          "field_1":"1",
+          "field_2":"北京"
+        },
+        {
+          "field_1":"1",
+          "field_2":"北京"
+        }
+      ]
+    }
+  },
+  "errorCode": 0,
+  "page": 1,
+  "pageSize": 1,
+  "success": true,
+  "total": 1,
+  "totalPages": 1
+}

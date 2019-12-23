@@ -19,6 +19,27 @@
             <artifactId>guava</artifactId>
             <version>r05</version>
         </dependency>
+
+        <!-- itex依赖 -->
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itext-pdfa</artifactId>
+            <version>5.5.7</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.sun/jimi -->
+        <dependency>
+            <groupId>com.sun</groupId>
+            <artifactId>jimi</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!-- fastJson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.29</version>
+        </dependency>
     </dependencies>
 
 </project>
